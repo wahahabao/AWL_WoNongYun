@@ -28,8 +28,8 @@ public class MainActivity extends Activity {
     public void onViewClicked(View view) {
         int id = view.getId();
         if (id == R.id.btn_count) {
-//            tv_showCount.setText("次数："+i);
-            tv_showCount.setText(i);
+            tv_showCount.setText("次数："+i);
+//            tv_showCount.setText(i);
             i++;
         } else if (id == R.id.tv_showCount) {
             Toast.makeText(this,"textview",Toast.LENGTH_SHORT).show();
