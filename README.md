@@ -7,4 +7,4 @@
 2、Retrofit
 3、Glide
 4、Rxjava
-5、MVVM
+5、   MVVM
