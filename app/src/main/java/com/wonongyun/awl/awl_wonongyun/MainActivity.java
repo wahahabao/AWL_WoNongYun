@@ -1,6 +1,7 @@
 package com.wonongyun.awl.awl_wonongyun;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.wonongyun.awl.awl_wonongyun.API.PhoneService;
 import com.wonongyun.awl.awl_wonongyun.model.PhoneResult;
+import com.wonongyun.awl.awl_wonongyun.ui.activity.TwoActivity;
 
 import java.util.concurrent.TimeUnit;
 
@@ -32,11 +34,12 @@ public class MainActivity extends Activity {
     TextView tv;
     @BindView(R.id.edit_user)
     EditText phoneView;
+    @BindView(R.id.btn_toTwoActivity)
+    Button btnToTwoActivity;
 
     private static final String BASE_URL = "http://apis.juhe.cn";
     private static final String API_KEY = "c806db10ebb140cc90395ad429129517";
     private static final String dtype = "";
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +53,7 @@ public class MainActivity extends Activity {
         int id = v.getId();
         if (id == R.id.click) {
             // TODO: 2017/10/25  点击Query按钮开始网络请求
-            Log.i("TAG","onClick");
+            Log.i("TAG", "onClick");
             query();
         }
     }
@@ -58,13 +61,13 @@ public class MainActivity extends Activity {
     /**
      * 网络请求
      */
-    private void query(){
-        //打印网络请求日志HttpLoggingInterceptor、OkHttpClient、retrofit..client(client)
+    private void query() {
+        //打印网络请求日志HttpLoggingInterceptor、OkHttpClient、retrofit.client(client)
         HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor(new HttpLoggingInterceptor.Logger() {
             @Override
             public void log(String message) {
                 //打印retrofit日志
-                Log.i("RetrofitLog","retrofitBack = "+message);
+                Log.i("RetrofitLog", "retrofitBack = " + message);
             }
         });
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
@@ -84,30 +87,41 @@ public class MainActivity extends Activity {
                 .build();
         //2.创建访问API的请求
         PhoneService service = retrofit.create(PhoneService.class);
-        Call<PhoneResult> call = service.getResult(phoneView.getText().toString(),dtype,API_KEY);
+        Call<PhoneResult> call = service.getResult(phoneView.getText().toString(), dtype, API_KEY);
         //3.发送请求
         call.enqueue(new Callback<PhoneResult>() {
             @Override
             public void onResponse(Call<PhoneResult> call, Response<PhoneResult> response) {
                 //4.处理结果
-                if (response.isSuccessful()){
+                if (response.isSuccessful()) {
                     PhoneResult result = response.body();
-                    if (result != null){
+                    if (result != null) {
                         PhoneResult.ResultEntity entity = result.getResult();
                         try {
-                            tv.setText(result.getReason()+":"+entity.getProvince()+entity.getCity());
-                        }catch (Exception e){
-                            Log.i("TAG","号码输入有误");
+                            tv.setText(result.getReason() + ":" + entity.getProvince() + entity.getCity());
+                        } catch (Exception e) {
+                            Log.i("TAG", "号码输入有误");
                         }
-
                     }
                 }
             }
 
             @Override
             public void onFailure(Call<PhoneResult> call, Throwable t) {
-                Log.i("TAG","发送请求onFailure");
+                Log.i("TAG", "网络请求onFailure");
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+    }
+
+    @OnClick(R.id.btn_toTwoActivity)
+    public void onViewClicked() {
+        Intent intent = new Intent();
+        intent.setClass(this, TwoActivity.class);
+        startActivity(intent);
     }
 }
