@@ -9,9 +9,9 @@
     URL错误，不能正确请求：Call<PhoneResult> getResult(@Header("phone") String phone,@Query("dtype") String dtype,@Query("key") String apikey);
     URL正确，能正确请求Call<PhoneResult> getResult(@Query("phone") String phone,@Query("dtype") String dtype,@Query("") String apikey);
     //@Header和@Query区别，@Query("X")中的X一定要严格对应接口。
-3、Glidekey
+3、Glide 图片加载框架（不是裁剪框架）
 4、Rxjava
 5、MVVM
 6、Databindin绑定
 7、自定义控件
-8、包的结构
+8、项目的搭建
