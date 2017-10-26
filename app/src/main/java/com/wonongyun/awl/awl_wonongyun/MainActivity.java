@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.wonongyun.awl.awl_wonongyun.API.PhoneService;
+import com.wonongyun.awl.awl_wonongyun.glide.GlideActivity;
 import com.wonongyun.awl.awl_wonongyun.model.PhoneResult;
 import com.wonongyun.awl.awl_wonongyun.ui.activity.TwoActivity;
 
@@ -40,6 +41,8 @@ public class MainActivity extends Activity {
     private static final String BASE_URL = "http://apis.juhe.cn";
     private static final String API_KEY = "c806db10ebb140cc90395ad429129517";
     private static final String dtype = "";
+    @BindView(R.id.btn_to_glideAc)
+    Button btnToGlideAc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -122,6 +125,13 @@ public class MainActivity extends Activity {
     public void onViewClicked() {
         Intent intent = new Intent();
         intent.setClass(this, TwoActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_to_glideAc)
+    public void onViewClicked1() {
+        Intent intent = new Intent();
+        intent.setClass(this, GlideActivity.class);
         startActivity(intent);
     }
 }

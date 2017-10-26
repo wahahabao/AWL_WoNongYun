@@ -35,5 +35,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_toTwoActivity"
         android:text="进入TwoAc"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_to_glideAc"
+        android:text="打开GlideA"/>
 
 </LinearLayout>

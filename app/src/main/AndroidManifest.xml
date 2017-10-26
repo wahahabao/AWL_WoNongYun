@@ -21,6 +21,7 @@
 
         <activity android:name=".ui.activity.TwoActivity">
         </activity>
+        <activity android:name=".glide.GlideActivity"></activity>
     </application>
 
 </manifest>
