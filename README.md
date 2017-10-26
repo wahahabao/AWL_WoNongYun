@@ -5,6 +5,12 @@
 
 1、注解：黄油刀依赖添加ok、测试可用ok；但是生成注解的时候会自动导入包；*
 2、Retrofit
-3、Glide
+
+    URL错误，不能正确请求：Call<PhoneResult> getResult(@Header("phone") String phone,@Query("dtype") String dtype,@Query("key") String apikey);
+    URL正确，能正确请求Call<PhoneResult> getResult(@Query("phone") String phone,@Query("dtype") String dtype,@Query("") String apikey);
+    //@Header和@Query区别，@Query("X")中的X一定要严格对应接口。
+
+
+3、Glidekey
 4、Rxjava
 5、   MVVM
