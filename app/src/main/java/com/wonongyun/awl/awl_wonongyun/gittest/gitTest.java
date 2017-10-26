@@ -8,6 +8,8 @@ import android.util.Log;
 
 public class gitTest {
 
+
+
     public String getModel() {
         return model;
     }
@@ -17,4 +19,14 @@ public class gitTest {
     }
 
     private String model;
+
+    public int getTagtest() {
+        return tagtest;
+    }
+
+    public void setTagtest(int tagtest) {
+        this.tagtest = tagtest;
+    }
+
+    private int tagtest;
 }
