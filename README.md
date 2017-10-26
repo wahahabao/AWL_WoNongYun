@@ -13,4 +13,5 @@
 
 3、Glidekey
 4、Rxjava
-5、   MVVM
+5、MVVM
+6、Databinding数据绑定
