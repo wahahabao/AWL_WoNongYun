@@ -8,5 +8,13 @@ import android.util.Log;
 
 public class gitTest {
 
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
     private String model;
 }
