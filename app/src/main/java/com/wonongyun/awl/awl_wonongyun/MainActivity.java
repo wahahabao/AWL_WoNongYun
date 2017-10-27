@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.wonongyun.awl.awl_wonongyun.API.PhoneService;
+import com.wonongyun.awl.awl_wonongyun.databinding.DataBindingDemoActivity;
 import com.wonongyun.awl.awl_wonongyun.glide.GlideActivity;
 import com.wonongyun.awl.awl_wonongyun.model.PhoneResult;
 import com.wonongyun.awl.awl_wonongyun.ui.activity.TwoActivity;
@@ -43,6 +44,8 @@ public class MainActivity extends Activity {
     private static final String dtype = "";
     @BindView(R.id.btn_to_glideAc)
     Button btnToGlideAc;
+    @BindView(R.id.btn_to_databindingdemo)
+    Button btnToDatabindingdemo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,6 +135,13 @@ public class MainActivity extends Activity {
     public void onViewClicked1() {
         Intent intent = new Intent();
         intent.setClass(this, GlideActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_to_databindingdemo)
+    public void onViewClicked2() {
+        Intent intent = new Intent();
+        intent.setClass(this, DataBindingDemoActivity.class);
         startActivity(intent);
     }
 }

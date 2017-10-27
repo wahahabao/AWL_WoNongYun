@@ -40,5 +40,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_to_glideAc"
         android:text="打开GlideA"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_to_databindingdemo"
+        android:text="go to databinding"/>
 
 </LinearLayout>

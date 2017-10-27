@@ -22,6 +22,8 @@
         <activity android:name=".ui.activity.TwoActivity">
         </activity>
         <activity android:name=".glide.GlideActivity"></activity>
+        <activity android:name=".databinding.DataBindingDemoActivity"></activity>
+        <activity android:name=".databinding.DataBindingDemoAcTwo"></activity>
     </application>
 
 </manifest>

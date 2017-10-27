@@ -40,8 +40,8 @@ public class GlideActivity extends Activity {
 
     private void uploadPic(){
         //.placeholder(R.drawable.loading)
-//        String url = "http://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1509606622&di=c839ba5648343143adc894f9ad68b6b5&imgtype=jpg&src=http%3A%2F%2Fimg6.bdstatic.com%2Fimg%2Fimage%2Fpublic%2Fliuling.jpg";
-        String url = "http://p1.pstatp.com/large/166200019850062839d3";
-        Glide.with(this).load(url).placeholder(R.drawable.loading).error(R.drawable.error).diskCacheStrategy(DiskCacheStrategy.NONE).into(ivUploadPic);
+        String url = "http://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1509606622&di=c839ba5648343143adc894f9ad68b6b5&imgtype=jpg&src=http%3A%2F%2Fimg6.bdstatic.com%2Fimg%2Fimage%2Fpublic%2Fliuling.jpg";
+//        String url = "http://p1.pstatp.com/large/166200019850062839d3";
+        Glide.with(this).load(url).placeholder(R.drawable.loading).crossFade(5000).error(R.drawable.error).diskCacheStrategy(DiskCacheStrategy.NONE).into(ivUploadPic);
     }
 }

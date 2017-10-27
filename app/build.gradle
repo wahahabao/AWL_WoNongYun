@@ -17,6 +17,12 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //核心配置代码在这里
+    dataBinding{
+        enabled = true
+    }
+
 }
 
 dependencies {
