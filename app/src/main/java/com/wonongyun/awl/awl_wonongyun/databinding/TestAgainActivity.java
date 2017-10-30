@@ -26,6 +26,7 @@ public class TestAgainActivity extends Activity {
         testAgain1.setUsTime(8);
         binding.setTestwxf(testAgain);
         binding.setWxfBieming(testAgain1);
+
         binding.setWxfOnClickL(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
