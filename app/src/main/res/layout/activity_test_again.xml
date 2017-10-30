@@ -5,6 +5,10 @@
     <data>
         <import type="com.wonongyun.awl.awl_wonongyun.databinding.model.TestAgain"/>
         <import type="com.wonongyun.awl.awl_wonongyun.databinding.TestAgain" alias = "bieming"/>//起别名
+        <import type="java.util.ArrayList" />
+        <import type="java.util.HashMap" />
+        <import type="android.view.View"/>
+
         <variable
             name="testwxf"
             type="TestAgain"/>
@@ -14,6 +18,40 @@
         <variable
             name="wxfBieming"
             type="bieming"/>
+        <variable
+            name="weight"
+            type="String"/>
+
+        //集合的用法
+        <variable
+            name="list"
+            type="ArrayList" />
+        <variable
+            name="map"
+            type="HashMap"/>
+        <variable
+            name="array"
+            type="String"/>
+        //为集合定义的索引
+        <variable
+            name="listkey"
+            type="int"/>
+        <variable
+            name="mapkey"
+            type="String"/>
+        <variable
+            name="arraykey"
+            type="int"/>
+        //字符串、布尔值、int的用法
+        <variable
+            name="str"
+            type="String" />
+        <variable
+            name="error"
+            type="boolean"/>
+        <variable
+            name="num"
+            type="int"/>
     </data>
 
     <LinearLayout
@@ -53,6 +91,45 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@{String.valueOf(wxfBieming.usTime)}"/>//整形转字符串
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="boolean"
+            android:visibility="@{wxfBieming.isTrue?View.VISIBLE:View.GONE}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{weight}"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"
+            />
+        <!--
+        //集合的使用
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{list[listkey]}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        -->
+    <include layout="@layout/titlebar"/>
     </LinearLayout>
 </layout>
 

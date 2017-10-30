@@ -24,9 +24,10 @@ public class TestAgainActivity extends Activity {
         com.wonongyun.awl.awl_wonongyun.databinding.TestAgain testAgain1 = new com.wonongyun.awl.awl_wonongyun.databinding.TestAgain();
         testAgain1.setProduct("江苏泰州");
         testAgain1.setUsTime(8);
+        testAgain1.setTrue(true);
         binding.setTestwxf(testAgain);
         binding.setWxfBieming(testAgain1);
-
+        binding.setWeight("600t");
         binding.setWxfOnClickL(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

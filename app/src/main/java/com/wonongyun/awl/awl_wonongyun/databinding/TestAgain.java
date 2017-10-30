@@ -7,6 +7,25 @@ package com.wonongyun.awl.awl_wonongyun.databinding;
 public class TestAgain {
     private int usTime;
     private String product;
+    private boolean isTrue;
+
+    public String getXX() {
+        return XX;
+    }
+
+    public void setXX(String XX) {
+        this.XX = XX;
+    }
+
+    private String XX;
+
+    public boolean isTrue() {
+        return isTrue;
+    }
+
+    public void setTrue(boolean aTrue) {
+        isTrue = aTrue;
+    }
 
     public int getUsTime() {
         return usTime;

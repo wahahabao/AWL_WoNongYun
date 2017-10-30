@@ -9,7 +9,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.wonongyun.awl.awl_wonongyun.R;
-import com.wonongyun.awl.awl_wonongyun.databinding.ActivityDatabindingtwoBinding;
 import com.wonongyun.awl.awl_wonongyun.databinding.model.DataBindingTwoModel;
 
 /**
