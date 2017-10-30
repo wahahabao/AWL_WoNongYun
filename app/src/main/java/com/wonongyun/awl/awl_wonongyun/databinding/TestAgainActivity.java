@@ -30,7 +30,7 @@ public class TestAgainActivity extends Activity {
         binding.setWxfOnClickL(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.i("TAG","测试成功");
+                Log.i("TAG"," 测试成功");
             }
         });
     }
