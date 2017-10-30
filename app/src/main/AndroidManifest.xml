@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wonongyun.awl.awl_wonongyun">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,12 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".ui.activity.TwoActivity">
-        </activity>
-        <activity android:name=".glide.GlideActivity"></activity>
-        <activity android:name=".databinding.DataBindingDemoActivity"></activity>
-        <activity android:name=".databinding.DataBindingDemoAcTwo"></activity>
+        <activity android:name=".ui.activity.TwoActivity"></activity>
+        <activity android:name=".glide.GlideActivity" />
+        <activity android:name=".databinding.DataBindingDemoActivity" />
+        <activity android:name=".databinding.DataBindingDemoAcTwo" />
+        <activity android:name=".databinding.TestAgainActivity"></activity>
     </application>
 
 </manifest>

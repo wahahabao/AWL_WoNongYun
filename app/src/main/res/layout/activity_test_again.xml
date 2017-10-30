@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.wonongyun.awl.awl_wonongyun.databinding.model.TestAgain"/>
+        <import type="com.wonongyun.awl.awl_wonongyun.databinding.TestAgain" alias = "bieming"/>//起别名
+        <variable
+            name="testwxf"
+            type="TestAgain"/>
+        <variable
+            name="wxfOnClickL"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="wxfBieming"
+            type="bieming"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context="com.wonongyun.awl.awl_wonongyun.databinding.TestAgainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{testwxf.name}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{testwxf.kind}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{testwxf.price}"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{testwxf.btnContent}"
+            android:onClick="@{wxfOnClickL}"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{wxfBieming.product}"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{String.valueOf(wxfBieming.usTime)}"/>//整形转字符串
+    </LinearLayout>
+</layout>
+
