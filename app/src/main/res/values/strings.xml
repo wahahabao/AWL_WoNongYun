@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">AWL_WoNongYun</string>
+    <string name="go_to_style">go to style</string>
+    <string name="begin_test">begin_test</string>
+    <string name="dif_color_text">dif color text</string>
+    <string name="back">back</string>
+    <string name="weixin">Title</string>
+    <string name="edit">编辑</string>
+    <string name="btn_back">点击了back</string>
+    <string name="btn_back1">点击了back</string>
+    <string name="tv_text">点击了文本</string>
+    <string name="btn_edit">点击了编辑按钮</string>
 </resources>

@@ -12,8 +12,10 @@ import android.widget.TextView;
 import com.wonongyun.awl.awl_wonongyun.API.PhoneService;
 import com.wonongyun.awl.awl_wonongyun.databinding.DataBindingDemoActivity;
 import com.wonongyun.awl.awl_wonongyun.databinding.TestAgainActivity;
+import com.wonongyun.awl.awl_wonongyun.extend.ExtendActivity;
 import com.wonongyun.awl.awl_wonongyun.glide.GlideActivity;
 import com.wonongyun.awl.awl_wonongyun.model.PhoneResult;
+import com.wonongyun.awl.awl_wonongyun.style_t.StyleActivity;
 import com.wonongyun.awl.awl_wonongyun.ui.activity.TwoActivity;
 
 import java.util.concurrent.TimeUnit;
@@ -49,6 +51,10 @@ public class MainActivity extends Activity {
     Button btnToDatabindingdemo;
     @BindView(R.id.btn_goto_again_databinding)
     Button btnGotoAgainDatabinding;
+    @BindView(R.id.btn_goto_extend)
+    Button btnGotoExtend;
+    @BindView(R.id.btn_goto_style)
+    Button btnGotoStyle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,5 +159,17 @@ public class MainActivity extends Activity {
         Intent intent = new Intent();
         intent.setClass(this, TestAgainActivity.class);
         startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_goto_extend)
+    public void onViewClicked4() {
+        Intent intent = new Intent();
+        intent.setClass(this, ExtendActivity.class);
+        startActivity(intent);
+    }
+
+    @OnClick(R.id.btn_goto_style)
+    public void onViewClicked5() {
+        startActivity(new Intent(this, StyleActivity.class));
     }
 }

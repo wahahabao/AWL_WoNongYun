@@ -50,5 +50,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_goto_again_databinding"
         android:text="goto again datadingding"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="go to extendActivity"
+        android:id="@+id/btn_goto_extend"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_goto_style"
+        android:text="@string/go_to_style"/>
 
 </LinearLayout>

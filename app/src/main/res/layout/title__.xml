@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/btn_back"
+        android:layout_margin="5dp"
+        android:text="@string/back"
+        android:textColor="@color/colorTitleText"/>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_text"
+        android:text="@string/weixin"
+        android:layout_margin="5dp"
+        android:textSize="32sp"
+        android:textColor="#ff4d74" />
+    <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit"
+        android:layout_margin="5dp"
+        android:text="@string/edit"
+        android:textColor="@color/colorTitleText"/>
+</LinearLayout>

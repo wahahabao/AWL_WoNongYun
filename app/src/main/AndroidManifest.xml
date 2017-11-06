@@ -18,11 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activity.TwoActivity"></activity>
+        <activity android:name=".ui.activity.TwoActivity" />
         <activity android:name=".glide.GlideActivity" />
         <activity android:name=".databinding.DataBindingDemoActivity" />
         <activity android:name=".databinding.DataBindingDemoAcTwo" />
-        <activity android:name=".databinding.TestAgainActivity"></activity>
+        <activity android:name=".databinding.TestAgainActivity" />
+        <activity android:name=".extend.ExtendActivity" />
+        <activity android:name=".style_t.StyleActivity"></activity>
     </application>
 
 </manifest>
