@@ -13,6 +13,9 @@ public class Course {
         this.name = name;
     }
 
+    public Course() {
+    }
+
     public String getId() {
         return id;
     }

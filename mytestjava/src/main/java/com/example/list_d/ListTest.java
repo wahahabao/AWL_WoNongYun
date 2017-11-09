@@ -8,6 +8,7 @@ import java.util.List;
 
 /**
  * Created by AWL on 2017/11/6.
+ * 使用Object操作集合
  */
 
 public class ListTest  {
