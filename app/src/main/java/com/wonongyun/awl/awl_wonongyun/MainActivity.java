@@ -187,5 +187,7 @@ public class MainActivity extends Activity {
     @OnClick(R.id.btn_land_port)
     public void onViewClicked7() {
         startActivity(new Intent(this, LandAndPortActivity.class));
+
+
     }
 }

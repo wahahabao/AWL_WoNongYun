@@ -22,5 +22,7 @@
 11、接口、集合
 12、回调
 
+
+
 注：layout-land和layout-port，直接在在res右击选择新建android 源码文件夹，选择layout，直接写名字
 layout-land和layout-port，经过实测运行满足想要条件。
