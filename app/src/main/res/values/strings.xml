@@ -10,4 +10,11 @@
     <string name="btn_back1">点击了back</string>
     <string name="tv_text">点击了文本</string>
     <string name="btn_edit">点击了编辑按钮</string>
+    <string name="dp">dp值</string>
+    <string name="dp1">dp值1</string>
+    <string name="GotoScreenAdapterActivity">gotoScreenAdapterActivity</string>
+    <string name="title_activity_land_and_port">LandAndPortActivity</string>
+    <string name="moren">默认layout</string>
+    <string name="land">land模式</string>
+    <string name="port">port模式</string>
 </resources>

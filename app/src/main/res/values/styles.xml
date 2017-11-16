@@ -11,9 +11,20 @@
     <style name="CustomizedWindowTitleBackground">
         <item name="android:background">#047BF0</item>
     </style>
+
     <style name="titlebarstyle" parent="android:Theme">
         <item name="android:windowTitleSize">68dp</item>
         <item name="android:clipToPadding">true</item>
-        <item name="android:windowTitleBackgroundStyle">@style/CustomizedWindowTitleBackground</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomizedWindowTitleBackground
+        </item>
     </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

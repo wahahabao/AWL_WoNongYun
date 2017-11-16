@@ -24,7 +24,12 @@
         <activity android:name=".databinding.DataBindingDemoAcTwo" />
         <activity android:name=".databinding.TestAgainActivity" />
         <activity android:name=".extend.ExtendActivity" />
-        <activity android:name=".style_t.StyleActivity"></activity>
+        <activity android:name=".style_t.StyleActivity" />
+        <activity android:name=".ui.activity.ScreenAdapterActivity" />
+        <activity
+            android:name=".ui.activity.LandAndPortActivity"
+            android:label="@string/title_activity_land_and_port"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

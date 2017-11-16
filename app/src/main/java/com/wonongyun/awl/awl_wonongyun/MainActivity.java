@@ -16,6 +16,8 @@ import com.wonongyun.awl.awl_wonongyun.extend.ExtendActivity;
 import com.wonongyun.awl.awl_wonongyun.glide.GlideActivity;
 import com.wonongyun.awl.awl_wonongyun.model.PhoneResult;
 import com.wonongyun.awl.awl_wonongyun.style_t.StyleActivity;
+import com.wonongyun.awl.awl_wonongyun.ui.activity.LandAndPortActivity;
+import com.wonongyun.awl.awl_wonongyun.ui.activity.ScreenAdapterActivity;
 import com.wonongyun.awl.awl_wonongyun.ui.activity.TwoActivity;
 
 import java.util.concurrent.TimeUnit;
@@ -55,6 +57,10 @@ public class MainActivity extends Activity {
     Button btnGotoExtend;
     @BindView(R.id.btn_goto_style)
     Button btnGotoStyle;
+    @BindView(R.id.btn_goto_ScreenAdapterActivity)
+    Button btnGotoScreenAdapterActivity;
+    @BindView(R.id.btn_land_port)
+    Button btnLandPort;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -171,5 +177,15 @@ public class MainActivity extends Activity {
     @OnClick(R.id.btn_goto_style)
     public void onViewClicked5() {
         startActivity(new Intent(this, StyleActivity.class));
+    }
+
+    @OnClick(R.id.btn_goto_ScreenAdapterActivity)
+    public void onViewClicked6() {
+        startActivity(new Intent(this, ScreenAdapterActivity.class));
+    }
+
+    @OnClick(R.id.btn_land_port)
+    public void onViewClicked7() {
+        startActivity(new Intent(this, LandAndPortActivity.class));
     }
 }
